@@ -53,7 +53,7 @@ export default {
   methods: {
     getProperty () {
       if (this.$route.params.slug !== undefined) {
-        axios.get(`http://api.property.test/api/v1/properties/${this.$route.params.slug}`, {
+        axios.get(`${this.$apiUrl}/properties/${this.$route.params.slug}`, {
           params: {
             bidStatus: true,
             latestBid: true

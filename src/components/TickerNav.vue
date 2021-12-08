@@ -69,7 +69,7 @@ export default{
   },
 
   async created () {
-    await axios.get(`http://api.property.test/api/v1/properties`, {
+    await axios.get(`${this.$apiUrl}/properties`, {
       params: {
         bidStatus: true,
         latestBid: true
@@ -82,7 +82,7 @@ export default{
         this.errors.push(e)
       })
 
-    await axios.get(`http://api.property.test/api/v1/user/bids/breakdown`)
+    await axios.get(`${this.$apiUrl}/user/bids/breakdown`)
       .then(response => {
         this.bidBreakdown = response.data.data
       })
