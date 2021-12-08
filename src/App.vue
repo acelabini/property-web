@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/background/'+property.image) + ')' }">
     <top-nav
       :value="property.market_value"
       :title="property.title"
@@ -33,7 +33,8 @@ export default {
       property: {
         latestBid: {
           amount_formatted: 0
-        }
+        },
+        image: '14-flood-st.svg'
       },
       errors: []
     }
@@ -77,7 +78,7 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('~@/assets/bg.svg');
+  background-image: url('~@/assets/background/14-flood-st.svg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
