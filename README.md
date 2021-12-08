@@ -5,6 +5,12 @@
 ## Build Setup
 
 ``` bash
+# clone this repo
+git clone git@github.com:acelabini/property-web.git
+
+# cd to the directory
+cd ./property-web
+
 # install dependencies
 npm install
 
