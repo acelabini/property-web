@@ -19,7 +19,7 @@
       </div>
       <div class="col-sm-8 ticker">
         <div class="row px-sm-5" v-if="properties && properties.length">
-          <div class="col-sm" role="button" v-for="property in properties" :key="property.id" @click="getProperty(property.slug)">
+          <div class="col-sm property" role="button" v-for="property in properties" :key="property.id" @click="getProperty(property.slug)">
             <div class="label">
               <span class="caret" :class="property.bidStatus.status"></span>
               <span>{{ property.title }}</span>
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-2 bg-white">
+      <div class="col-sm-2 bg-white text-center">
         <div class="row">
           <div class="col-sm">
             <div class="label">Winning</div>
@@ -127,17 +127,24 @@ export default{
   border-bottom-color: #E91C1C;
   border-left-color: transparent;
 }
+.ticker .property:nth-last-child(2) {
+  text-align: center !important;
+}
+.ticker .property:last-child {
+  text-align: right !important;
+}
 .label {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: bold;
   line-height: 19px;
+  letter-spacing: 3px;
 }
 .value {
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: bold;
-  line-height: 19px;
+  line-height: 23px;
 }
 .value.outbid {
   color: #E91C1C;

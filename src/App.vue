@@ -90,14 +90,13 @@ export default {
   font-weight: 200;
   font-size: 1.2rem;
   color: #484848;
-  letter-spacing: 2px;
-  line-height: 27px;
+  letter-spacing: 1px;
+  line-height: 23px;
 }
 
 #app .title-text {
   font-size: 3rem;
-  letter-spacing: 2px;
-  line-height: 69px;
+  line-height: 59px;
 }
 
 * {
@@ -106,5 +105,10 @@ export default {
   font-family: Poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img.chromeperfectpixel-overlay {
+  width: 2560px !important;
+  height: 1440px !important;
 }
 </style>

@@ -3,7 +3,7 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
-Vue.prototype.$apiUrl = 'http://api.property.test/api/v1'
+Vue.prototype.$apiUrl = 'http://www.techfinitrix.com/api/v1'
 
 /* eslint-disable no-new */
 new Vue({
